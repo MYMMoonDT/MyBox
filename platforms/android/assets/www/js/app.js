@@ -5,15 +5,17 @@
 		AV.$ = jQuery;
 		AV.initialize("1ud9hn2wmc3whojbzarpys9w2q74ft6bwu5snkg21w8cfmnp", "v6b7vntwjvh1rmyoy89s28vufo5prmv2su9wihemmbhpwq9x");
 
-		// AV.User.logIn("jingpeng", "123456", {
-		// 	success: function(user) {
-		// 		// Do stuff after successful login.
-		// 		saveCategory(user.id, "test_category", "test_color", "");
-		// 	},
-		// 	error: function(user, error) {
-		// 		// The login failed. Check error to see why.
-		// 	}
-		// });
+		AV.User.logIn("jingpeng", "123456", {
+			success: function(user) {
+				// Do stuff after successful login.
+				// saveCategory(user.id, "test_category", "test_color", "");
+				 saveBox("53b81c4ae4b020cb6a8e2eb6", "test_box", "2", "");
+				// saveThing("53b8321be4b020cb6a8e4931", "test_thing", "des_thing", "$4.5", "");
+			},
+			error: function(user, error) {
+				// The login failed. Check error to see why.
+			}
+		});
 	});
 
 })();
