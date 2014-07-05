@@ -1,6 +1,7 @@
 var user_id;
 var current_category_id;
-
+var current_box_id;
+var current_box_name;
 (function(){
 	'use strict';
 	angular.module('MyBox', ['onsen.directives'])

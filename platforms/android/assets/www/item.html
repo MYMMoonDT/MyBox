@@ -2,8 +2,8 @@
 	<div ng-controller="ItemCtrl">
 	    <ons-navigator-toolbar title="盒子详情"></ons-navigator-toolbar>
 	    <div class="box-title-container">
-	    	<div class="box-title">起居室-书籍</div>
-	    	<div class="box-num">4</div>
+	    	<div class="box-title">{{boxName}}</div>
+	    	<div class="box-num">{{itemList.length}}</div>
 	   	</div>
 	   	<div class="box-option-container">
 	    	<div class="add-item-button"><i class="fa fa-plus" ng-click="ons.navigator.pushPage('item-create.html')"></i></div>
@@ -11,13 +11,13 @@
 	   	</div>
 	   	<ul class="item-list-container">
 	   		<li class="item-item-container" ng-repeat="item in itemList">
-	   			<div class="item-icon {{item.icon}}"></div>
+	   			<div class="item-icon icon1"></div>
 	   			<div class="item-title-container">
 	   				<div class="item-title">
-	   					{{item.title}}
+	   					{{item.name}}
 	   				</div>
 	   				<div class="item-time">
-	   					{{item.time}}
+	   					{{item.description}}
 	   				</div>
 	   				<div styel="clear:both;"></div>
 	   			</div>
