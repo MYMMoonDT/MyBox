@@ -1,0 +1,70 @@
+<ons-page class="center">
+    <ons-navigator-toolbar title="添加东西"  left-button-icon="fa fa-lg fa-chevron-left" right-button-icon="fa fa-lg fa-check"
+                           on-left-button-click="ons.navigator.popPage()">
+    </ons-navigator-toolbar>
+
+    <table class="add-item-table" BORDER=0 CELLSPACING="0">
+      <tr>
+	<td width="15%">
+	  <img src="images/name.png" class="add-item-icon">
+	</td>
+	<td width="85%">
+	  <input id="item_name" type="text" class="add-item-row-input" placeholder="名称">
+	</td>
+      </tr>
+
+      <tr>
+	<td width="15%">
+	  <img src="images/discription.png" class="add-item-icon">
+	</td>
+	<td width="85%">
+	  <input id="item_description" type="text" class="add-item-row-input" placeholder="描述">
+	</td>
+      </tr>
+
+      <tr>
+	<td width="15%">
+	  <img src="images/belong_box.png" class="add-item-icon">
+	</td>
+	<td width="85%">
+	  <select name="belong_box" class="add-item-row-input"> 
+	    <option value="0">起居室</option> 
+	    <option value="1">-起居室:书籍</option> 
+	    <option value="2">-起居室:饮料</option> 
+	    <option value="0">床底</option> 
+	    <option value="3">-床底:衣服</option> 
+	    <option value="0">柜子里</option> 
+	    <option value="4">-柜子里:上衣</option> 
+	    <option value="5">-柜子里:裤子</option> 
+	  </select> 
+	</td>
+      </tr>
+
+      <tr>
+	<td width="15%">
+	  <img src="images/price.png" class="add-item-icon">
+	</td>
+	<td width="85%">
+	  <input id="item_price" type="text" class="add-item-row-input" placeholder="价格">
+	</td>
+      </tr>
+
+      <tr>
+	<td width="15%">
+	  <img src="images/calendar.png" class="add-item-icon">
+	</td>
+	<td width="85%">
+	  <input type="text" id="datepicker">
+	</td>
+      </tr>
+
+    </table>
+
+    <div class="add-item-take-photo">
+      <ons-button type="large--cta">
+	拍张照吧！
+      </ons-button>
+    </div>
+</ons-page>
+
+
