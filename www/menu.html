@@ -1,0 +1,23 @@
+<ons-page style="background-color: white">
+
+	<ul class="topcoat-list">
+
+		<ons-list-item
+			class="topcoat-list__item--tappable topcoat-list__item__line-height" 
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('category-navigator.html')">
+			<i class="fa fa-home fa-lg" style="color: #666"></i>
+			&nbsp; 盒子组
+		</ons-list-item>
+
+		<ons-list-item 
+			class="topcoat-list__item--tappable topcoat-list__item__line-height"
+			ng-click="ons.slidingMenu.toggleMenu(); 
+			ons.slidingMenu.setAbovePage('box-navigator.html')">
+			<i class="fa fa-gear fa-lg" style="color: #666"></i>
+			&nbsp; 所有盒子
+		</ons-list-item>
+
+	</ul>
+
+</ons-page>
