@@ -1,0 +1,38 @@
+#qr-box{
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: url(../images/box-qr.png) no-repeat;
+}
+
+#qr-box .box-number{
+	padding-top: 25px;
+	font-size: 45px;
+}
+
+#qr-box .box-location{
+	color: #777;
+}
+
+#qr-area{
+	width: 90%;
+	height: 200px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+#qr-area p {
+	color: #aaa;
+}
+
+#qr-area img{
+	width: 130px;
+	height: 130px;
+}
+
+#share-btn{
+	width: 60%;
+	cursor: pointer;
+}

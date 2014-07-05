@@ -1,0 +1,20 @@
+  <ons-screen>
+    <ons-navigator title="分享">
+        <ons-page class="center">
+            <ons-row>
+              <div id="qr-box">
+                  <p class="box-number">1</p>
+                  <p class="box-location"><span id="box-category">起居室</span> : <span id="box-name">书籍</span></p>
+              </div>
+              <div id="qr-area">
+                  <p>扫描二维码可以查看盒子里的物品</p>
+                  <img src="images/qr-test.png" alt="">
+              </div>
+            </ons-row>
+            <ons-button id="share-btn"
+                ng-click="ons.screen.presentPage('page2.html')">
+                    点击分享
+            </ons-button>
+        </ons-page>
+    </ons-navigator>
+  </ons-screen>
