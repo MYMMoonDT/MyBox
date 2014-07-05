@@ -21,7 +21,17 @@ tr:nth-child(even) {background-color:#ECECEC}
 }
 
 .add-item-take-photo {
-    margin-top: 200px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.add-item-photo {
+    width: 150px;
+    height: 150px;
+    margin: 10px auto;
+}
+
+.add-item-photo img{
+    height: 100%;
+    width: 100%;
 }

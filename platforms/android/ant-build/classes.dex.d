@@ -6,4 +6,7 @@ e:\MyBox-Git\MyBox\platforms\android\ant-build\classes\edu\tongji\mybox\R$drawab
 e:\MyBox-Git\MyBox\platforms\android\ant-build\classes\edu\tongji\mybox\R$string.class \
 e:\MyBox-Git\MyBox\platforms\android\ant-build\classes\edu\tongji\mybox\R$xml.class \
 e:\MyBox-Git\MyBox\platforms\android\ant-build\classes\edu\tongji\mybox\R.class \
+e:\MyBox-Git\MyBox\platforms\android\ant-build\classes\org\apache\cordova\camera\CameraLauncher.class \
+e:\MyBox-Git\MyBox\platforms\android\ant-build\classes\org\apache\cordova\camera\ExifHelper.class \
+e:\MyBox-Git\MyBox\platforms\android\ant-build\classes\org\apache\cordova\camera\FileHelper.class \
 e:\MyBox-Git\MyBox\platforms\android\ant-build\dexedLibs\classes-245e19e418882061b0f1b686915d29f8.jar \

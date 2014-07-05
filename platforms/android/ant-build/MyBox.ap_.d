@@ -45,6 +45,7 @@ e:\MyBox-Git\MyBox\platforms\android\assets\www\item.html \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\js \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\lib \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\menu.html \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\plugins \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\qr-share.html \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\styles \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\belong_box.png \
@@ -65,6 +66,7 @@ e:\MyBox-Git\MyBox\platforms\android\assets\www\images\price.png \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\qr-test.png \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\take_photo.png \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\js\app.js \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\js\av.js \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\js\controller.js \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\js\jquery-ui.js \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\js\jquery.js \
@@ -193,6 +195,12 @@ e:\MyBox-Git\MyBox\platforms\android\assets\www\lib\onsen\js\angular\angular.min
 e:\MyBox-Git\MyBox\platforms\android\assets\www\lib\onsen\js\angular\angular.min.js.map \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\lib\onsen\js\angular\bower.json \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\lib\onsen\js\angular\README.md \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\plugins\org.apache.cordova.camera \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\plugins\org.apache.cordova.camera\www \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\Camera.js \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraConstants.js \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverHandle.js \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\CameraPopoverOptions.js \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\styles\app.css \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\styles\jquery-ui.css \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\styles\qr-share.css \

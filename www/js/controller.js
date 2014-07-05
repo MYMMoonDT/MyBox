@@ -30,5 +30,21 @@
 			"time" : "June 29, 2014"
 		}];
 		$( "#datepicker" ).datepicker();
+		$scope.takePicture = function(){
+			navigator.camera.getPicture(onSuccess, onFail, { quality: 80,
+    			destinationType: Camera.DestinationType.FILE_URI,
+    			encodingType: Camera.EncodingType.PNG,
+    			correctOrientation: true
+			});
+
+			function onSuccess(imageUrl) {
+			    var image = document.getElementById('photoImg');
+			    image.src = imageUrl;
+			}
+
+			function onFail(message) {
+			    alert('Failed because: ' + message);
+			}
+		}
 	}]);
 })(angular.module('MyBox'));
