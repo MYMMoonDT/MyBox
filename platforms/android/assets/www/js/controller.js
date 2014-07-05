@@ -29,5 +29,6 @@
 			"title" : "C++ Primer",
 			"time" : "June 29, 2014"
 		}];
+		$( "#datepicker" ).datepicker();
 	}]);
 })(angular.module('MyBox'));
