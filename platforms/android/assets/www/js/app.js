@@ -1,5 +1,7 @@
 var user_id;
 var current_category_id;
+var current_category_name;
+var current_box_id;
 
 (function(){
 	'use strict';
@@ -118,7 +120,7 @@ function queryBoxesByCategoryId(category_id){
 			// Do something with the returned AV.Object values
 			for (var i = 0; i < results.length; i++) {
 				var object = results[i];
-				alert(object.id + ' - ' + object.get('name'));
+				//alert(object.id + ' - ' + object.get('name'));
 			}
 		},
 		error: function(error) {
