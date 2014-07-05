@@ -1,3 +1,6 @@
+var user_id;
+var current_category_id;
+
 (function(){
 	'use strict';
 	angular.module('MyBox', ['onsen.directives'])
@@ -7,9 +10,10 @@
 
 		AV.User.logIn("jingpeng", "123456", {
 			success: function(user) {
+				user_id = user.id;
 				// Do stuff after successful login.
 				// saveCategory(user.id, "test_category", "test_color", "");
-				 saveBox("53b81c4ae4b020cb6a8e2eb6", "test_box", "2", "");
+				// saveBox("53b81c4ae4b020cb6a8e2eb6", "test_box", "1", "");
 				// saveThing("53b8321be4b020cb6a8e4931", "test_thing", "des_thing", "$4.5", "");
 			},
 			error: function(user, error) {

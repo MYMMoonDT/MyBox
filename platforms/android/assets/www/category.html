@@ -4,7 +4,7 @@
                            on-right-button-click="ons.navigator.pushPage('category-create.html')">
     </ons-navigator-toolbar>
 
-	<div style="width:100%;">
+	<!--<div style="width:100%;">
 		<div style="width:50%; float:left; height:200px; padding:10px;">
 			<div style="width:100%; height:100%; background-color:rgb(239, 232, 213);">
 				<ons-button style="margin-top:40px;">书籍</ons-button>
@@ -17,9 +17,17 @@
 				<h1>11</h1>
 			</div>
 		</div>
+	</div>-->
+	<div ng-repeat="temp in categoryList">
+		<div style="width:50%; float:left; height:200px; padding:10px;" ng-click="viewCategoryDetail(temp.id)">
+			<div style="width:100%; height:100%; background-color:rgb(239, 232, 213);">
+				<ons-button style="margin-top:40px;">{{temp.name}}</ons-button>
+				<h1>11</h1>
+			</div>
+		</div>
 	</div>
 
-	<div style="width:100%;">
+	<!--<div style="width:100%;">
 		<div style="width:50%; float:left; height:200px; padding:10px;">
 			<div style="width:100%; height:100%; background-color:rgb(239, 232, 213);">
 				<ons-button style="margin-top:40px;">零食</ons-button>
@@ -32,6 +40,6 @@
 				<h1>11</h1>
 			</div>
 		</div>
-	</div>
+	</div>-->
 </div>
 </ons-page>
