@@ -1,6 +1,6 @@
 (function(app) {
 	app.controller('CategoryCtrl', ['$scope',function($scope){
-
+		
 	}]);
 
 	app.controller('BoxCtrl', ['$scope',function($scope){
