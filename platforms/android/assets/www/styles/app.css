@@ -1,0 +1,102 @@
+/*Item Page CSS*/
+.box-title-container {
+	background-color: #90bf4e;
+	position: relative;	
+}
+.box-title-container .box-title {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 80px;
+	text-align: left;
+	margin-left: 80px;
+}
+
+.box-title-container .box-num {
+	font-size: 35px;
+	font-weight: 600;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+	color: #fff;
+}
+
+.box-option-container {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	left: 20px;
+	top: 60px;
+}
+
+.box-option-container .add-item-button, 
+.box-option-container .code-item-button{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../images/option-button.png);
+	background-size: 40px;
+	margin-left: 10px;
+}
+
+.box-option-container i {
+	color: #90bf4e;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.item-list-container {
+	list-style: none;
+	margin-top: 0;
+	padding-top: 40px;
+	background-color: #fff;
+	padding-left: 0;
+}
+
+.item-item-container {
+	margin-top: 0;
+	padding-left: 20px;
+	width: 100%;
+	height: 60px;
+	text-align: left;
+}
+
+.item-item-container .item-icon {
+	width: 60px;
+	height: 60px;
+	float: left;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 45px;
+}
+
+.item-icon.icon1 {
+	background-image: url(../images/ic_item_1.png);
+}
+
+.item-item-container .item-title-container {
+	height: 60px;
+	float: left;
+	margin-left: 20px;
+}
+
+.item-title-container {
+
+}
+
+.item-title-container .item-title {
+	font-size: 18px;
+	line-height: 25px;
+	margin-top: 5px;
+}
+
+.item-title-container .item-time {
+	font-size: 14px;
+	color: #999999;
+	line-height: 25px;
+}
+
