@@ -4,7 +4,7 @@
 	}]);
 
 	app.controller('BoxCtrl', ['$scope',function($scope){
-		
+
 	}]);
 
 	app.controller('ItemCtrl', ['$scope',function($scope){
