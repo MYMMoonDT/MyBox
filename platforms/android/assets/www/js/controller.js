@@ -7,6 +7,10 @@
 
 	}]);
 
+    app.controller('QRShareCtrl', ['$scope',function($scope){
+	setTimeout(function(){$("#qr-code-gen").qrcode({width:150, height:150, text:"http://jetienne.com"});}, 100);
+    }]);
+
 	app.controller('ItemCtrl', ['$scope',function($scope){
 		$scope.itemList = [{
 			"id" : 1,
