@@ -50,6 +50,7 @@ e:\MyBox-Git\MyBox\platforms\android\assets\www\styles \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\belong_box.png \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\box-qr.png \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\box.png \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\images\boxgroup.png \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\calendar.png \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\delete.png \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\images\delete_button.png \
@@ -200,4 +201,5 @@ e:\MyBox-Git\MyBox\platforms\android\assets\www\styles\app.css \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\styles\create-something.css \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\styles\jquery-ui.css \
 e:\MyBox-Git\MyBox\platforms\android\assets\www\styles\qr-share.css \
+e:\MyBox-Git\MyBox\platforms\android\assets\www\styles\zzj.css \
 e:\MyBox-Git\MyBox\platforms\android\ant-build\AndroidManifest.xml \

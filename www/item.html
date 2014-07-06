@@ -2,22 +2,22 @@
 	<div ng-controller="ItemCtrl">
 	    <ons-navigator-toolbar title="盒子详情"></ons-navigator-toolbar>
 	    <div class="box-title-container">
-	    	<div class="box-title">{{boxName}}</div>
-	    	<div class="box-num">{{itemList.length}}</div>
+	    	<div class="box-title">{{box_info.category}}:{{box_info.name}}</div>
+	    	<div class="box-num">{{box_info.order}}</div>
 	   	</div>
 	   	<div class="box-option-container">
 	    	<div class="add-item-button"><i class="fa fa-plus" ng-click="ons.navigator.pushPage('item-create.html')"></i></div>
 	    	<div class="code-item-button"><i class="fa fa-qrcode" ng-click="ons.navigator.pushPage('qr-share.html')"></i></div>
 	   	</div>
 	   	<ul class="item-list-container">
-	   		<li class="item-item-container" ng-repeat="item in itemList">
+	   		<li class="item-item-container" ng-repeat="item in thingsList">
 	   			<div class="item-icon icon1"></div>
 	   			<div class="item-title-container">
 	   				<div class="item-title">
 	   					{{item.name}}
 	   				</div>
 	   				<div class="item-time">
-	   					{{item.description}}
+	   					{{item.createdAt}}
 	   				</div>
 	   				<div styel="clear:both;"></div>
 	   			</div>

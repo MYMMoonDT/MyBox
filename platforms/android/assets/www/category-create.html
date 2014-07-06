@@ -1,7 +1,6 @@
 <ons-page class="center">
 <div ng-controller="CategoryCreateCtrl">
-    <ons-navigator-toolbar title="添加盒子组"  left-button-icon="fa fa-lg fa-chevron-left" right-button-icon="fa fa-lg fa-check"
-                           on-left-button-click="ons.navigator.popPage()">
+    <ons-navigator-toolbar title="添加盒子组"  left-button-icon="fa fa-lg fa-chevron-left" on-left-button-click="ons.navigator.popPage()">
     </ons-navigator-toolbar>
 
     <!-- <div class="navigation-bar">
@@ -22,14 +21,14 @@
 	  <img src="images/name.png" class="add-item-icon">
 	</td>
 	<td width="85%">
-	  <input id="boxgroup_name" type="text" class="add-item-row-input" placeholder="名称">
+	  <input id="boxgroup_name" ng-model="categoryName" type="text" class="add-item-row-input" placeholder="名称">
 	</td>
       </tr>
     </table>
 
     <div class="add-item-take-photo">
-      <ons-button type="large--cta">
-	拍张照吧！
+      <ons-button id="createCategoryButton" type="large--cta">
+	确认
       </ons-button>
     </div>
 </div>

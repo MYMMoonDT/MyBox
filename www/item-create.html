@@ -1,6 +1,6 @@
 <ons-page class="center">
 <div ng-controller="ItemCtrl">
-    <ons-navigator-toolbar title="添加东西"  left-button-icon="fa fa-lg fa-chevron-left" right-button-icon="fa fa-lg fa-check"
+    <ons-navigator-toolbar title="添加东西"  left-button-icon="fa fa-lg fa-chevron-left" right-button-icon="fa fa-lg fa-check fa-check3"
                            on-left-button-click="ons.navigator.popPage()">
     </ons-navigator-toolbar>
 
@@ -10,7 +10,7 @@
 	  <img src="images/name.png" class="add-item-icon">
 	</td>
 	<td width="85%">
-	  <input id="item_name" type="text" class="add-item-row-input" placeholder="名称">
+	  <input id="item_name" type="text" ng-model="itemName" class="add-item-row-input" placeholder="名称">
 	</td>
       </tr>
 
@@ -19,7 +19,7 @@
 	  <img src="images/discription.png" class="add-item-icon">
 	</td>
 	<td width="85%">
-	  <input id="item_description" type="text" class="add-item-row-input" placeholder="描述">
+	  <input id="item_description" type="text" ng-model="itemDescription" class="add-item-row-input" placeholder="描述">
 	</td>
       </tr>
 
@@ -28,8 +28,8 @@
 	  <img src="images/belong_box.png" class="add-item-icon">
 	</td>
 	<td width="85%">
-	  <select name="belong_box" class="add-item-row-input"> 
-	    <option value="0">起居室</option> 
+	  <select id="belong_box_option" name="belong_box" ng-model="belongBox" class="add-item-row-input"> 
+	    <option value="0" selected="selected">起居室</option> 
 	    <option value="1">-起居室:书籍</option> 
 	    <option value="2">-起居室:饮料</option> 
 	    <option value="0">床底</option> 
@@ -46,7 +46,7 @@
 	  <img src="images/price.png" class="add-item-icon">
 	</td>
 	<td width="85%">
-	  <input id="item_price" type="text" class="add-item-row-input" placeholder="价格">
+	  <input id="item_price" type="text" ng-model="itemPrice" class="add-item-row-input" placeholder="价格">
 	</td>
       </tr>
 
@@ -66,6 +66,12 @@
     <div class="add-item-take-photo">
       <ons-button type="large--cta" ng-click="takePicture()">
 	拍张照吧！
+      </ons-button>
+    </div>
+    <p></p>
+    <div class="add-item-take-photo">
+      <ons-button type="large--cta" ng-click="confirm()">
+	确认
       </ons-button>
     </div>
 

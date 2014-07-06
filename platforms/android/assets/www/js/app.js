@@ -1,7 +1,13 @@
 var user_id;
 var current_category_id;
-var current_box_id;
+var current_category_name;
 var current_box_name;
+var current_box_id;
+var current_box_order_id;
+
+var category_box_list = [];
+var box_id_list = [];
+
 (function(){
 	'use strict';
 	angular.module('MyBox', ['onsen.directives'])
@@ -13,9 +19,9 @@ var current_box_name;
 			success: function(user) {
 				user_id = user.id;
 				// Do stuff after successful login.
-				// saveCategory(user.id, "test_category", "test_color", "");
-				// saveBox("53b81c4ae4b020cb6a8e2eb6", "test_box", "1", "");
-				// saveThing("53b8321be4b020cb6a8e4931", "test_thing", "des_thing", "$4.5", "");
+				//saveCategory(user.id, "test_category", "test_color", "");
+				//saveBox("53b8a288e4b0cdeb6e26d42a", "test_box", "1", "");
+				//saveThing("53b8a288e4b0cdeb6e26d42a", "test_thing", "des_thing", "$4.5", "");
 			},
 			error: function(user, error) {
 				// The login failed. Check error to see why.
@@ -49,12 +55,13 @@ function saveCategory(user_id, name, color, image){
 	});
 }
 
-function saveBox(category_id, name, order_id, image){
+function saveBox(category_id, name, category_name, order_id, image){
 	var Box = AV.Object.extend("Box");
 	var box = new Box();
 	box.set("name", name);
 	box.set("order_id", order_id);
 	box.set("category_id", category_id);
+	box.set("category_name", category_name);
 	box.set("image", image);
 	box.save(null, {
 		success: function(box) {
@@ -109,6 +116,43 @@ function queryCategoriesByUserId(user_id){
 	});
 }
 
+function queryCategoriesAndBoxesByUserId(user_id){
+	category_box_list = [];
+	box_id_list = [];
+	var Category = AV.Object.extend("Category");
+	var categoryQuery = new AV.Query(Category);
+	categoryQuery.equalTo("user_id", user_id);
+	categoryQuery.find({
+		success: function(category_results) {
+			// alert("Successfully retrieved " + results.length + " scores.");
+			// Do something with the returned AV.Object values
+			for (var i = 0; i < category_results.length; i++) {
+				var category = category_results[i];
+				var Box = AV.Object.extend("Box");
+				var query = new AV.Query(Box);
+				query.equalTo("category_id", category.id);
+				query.find({
+					success: function(box_results) {
+						// alert("Successfully retrieved " + results.length + " scores.");
+						// Do something with the returned AV.Object values
+						for (var j = 0; j < box_results.length; j++) {
+							var object = box_results[j];
+							category_box_list.push(object.get('category_name')+ ":" + object.get('name'));
+							box_id_list.push(object.id);
+						}
+					},
+					error: function(error) {
+						alert("Error: " + error.code + " " + error.message);
+					}
+				});
+			}
+		},
+		error: function(error) {
+			alert("Error: " + error.code + " " + error.message);
+		}
+	});
+}
+
 function queryBoxesByCategoryId(category_id){
 	var Box = AV.Object.extend("Box");
 	var query = new AV.Query(Box);
@@ -119,7 +163,7 @@ function queryBoxesByCategoryId(category_id){
 			// Do something with the returned AV.Object values
 			for (var i = 0; i < results.length; i++) {
 				var object = results[i];
-				alert(object.id + ' - ' + object.get('name'));
+				//alert(object.id + ' - ' + object.get('name'));
 			}
 		},
 		error: function(error) {
